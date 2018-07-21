@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
-namespace ProductionMaker
+namespace ProductionMaker.Models
 {
-    public class Arquivos
+    public class Arquivo
     {
         private string _fullName = "";
         private string _name = "";
@@ -20,6 +21,5 @@ namespace ProductionMaker
         public string Encoding { get { return _encoding; } set { _encoding = value; } }
         public bool OK { get { return _ok; } set { _ok = value; } }
         public long Tamanho { get { return _tamanho; } set { _tamanho = value; } }
-       
     }
 }

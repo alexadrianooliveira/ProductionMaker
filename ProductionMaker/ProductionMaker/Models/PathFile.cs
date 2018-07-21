@@ -2,15 +2,16 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
-namespace ProductionMaker
+namespace ProductionMaker.Models
 {
-    public class EnderFiles
+    public class PathFile
     {
         public string Endereco { get; set; }
         public string Nome { get; set; }
 
-        public EnderFiles(string Endereco,string Nome)
+        public PathFile(string Endereco, string Nome)
         {
             this.Endereco = Endereco;
             this.Nome = Nome;

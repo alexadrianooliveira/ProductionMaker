@@ -244,6 +244,7 @@
             this.ckbcaminho.Name = "ckbcaminho";
             this.ckbcaminho.Size = new System.Drawing.Size(424, 21);
             this.ckbcaminho.TabIndex = 26;
+            this.ckbcaminho.SelectedIndexChanged += new System.EventHandler(this.ckbcaminho_SelectedIndexChanged);
             // 
             // ckcIgEncode
             // 
@@ -319,6 +320,7 @@
             this.checkBox1.TabIndex = 9;
             this.checkBox1.Text = "Ignorar data";
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.ckBox_CheckedChanged);
             // 
             // button1
             // 

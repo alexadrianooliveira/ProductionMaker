@@ -57,13 +57,13 @@ namespace ProductionMaker
             }
         }
 
-        public static List<EnderFiles> GetArquivo()
+        public static List<Models.PathFile> GetArquivo()
         {
             string path = Directory.GetCurrentDirectory();
             string fileNameAndPath = path + "/config_maker.ini";
 
-            List<EnderFiles> linhas = new List<EnderFiles>();
-            linhas.Add(new EnderFiles("", ""));
+            List<Models.PathFile> linhas = new List<Models.PathFile>();
+            linhas.Add(new Models.PathFile("", ""));
 
             if (System.IO.File.Exists(@fileNameAndPath) == false)
                 return linhas;
@@ -73,7 +73,7 @@ namespace ProductionMaker
             {
                 string nome = rd.ReadLine();
 
-                linhas.Add(new EnderFiles(nome, nome));
+                linhas.Add(new Models.PathFile(nome, nome));
             }
 
             rd.Close();
@@ -83,9 +83,9 @@ namespace ProductionMaker
         private static bool TemLinha(string linha)
         {
             bool retorno = false;
-            List<EnderFiles> linhas = GetArquivo();
+            List<Models.PathFile> linhas = GetArquivo();
 
-            foreach (EnderFiles l in linhas)
+            foreach (Models.PathFile l in linhas)
             {
                 if (l.Endereco == linha)
                 {
