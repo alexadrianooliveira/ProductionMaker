@@ -37,12 +37,6 @@
             this.button3 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column4 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Encoding = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Tamanho = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.ckbcaminho = new System.Windows.Forms.ComboBox();
             this.ckcIgEncode = new System.Windows.Forms.CheckBox();
@@ -60,6 +54,12 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.SalvarComo = new System.Windows.Forms.FolderBrowserDialog();
+            this.Column4 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Encoding = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tamanho = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -171,49 +171,6 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(968, 286);
             this.dataGridView1.TabIndex = 36;
-            // 
-            // Column4
-            // 
-            this.Column4.FillWeight = 30F;
-            this.Column4.HeaderText = "";
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 30;
-            // 
-            // Column2
-            // 
-            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column2.DataPropertyName = "name";
-            this.Column2.FillWeight = 200F;
-            this.Column2.HeaderText = "Nome do arquivo";
-            this.Column2.Name = "Column2";
-            // 
-            // Column1
-            // 
-            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column1.DataPropertyName = "FullName";
-            this.Column1.FillWeight = 450F;
-            this.Column1.HeaderText = "Pasta";
-            this.Column1.Name = "Column1";
-            // 
-            // Encoding
-            // 
-            this.Encoding.DataPropertyName = "Encoding";
-            this.Encoding.HeaderText = "Encoding";
-            this.Encoding.Name = "Encoding";
-            // 
-            // Column3
-            // 
-            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column3.DataPropertyName = "Data";
-            this.Column3.HeaderText = "Modificado";
-            this.Column3.Name = "Column3";
-            // 
-            // Tamanho
-            // 
-            this.Tamanho.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Tamanho.DataPropertyName = "Tamanho";
-            this.Tamanho.HeaderText = "Tamanho";
-            this.Tamanho.Name = "Tamanho";
             // 
             // groupBox3
             // 
@@ -377,6 +334,49 @@
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(0, 17);
             // 
+            // Column4
+            // 
+            this.Column4.FillWeight = 30F;
+            this.Column4.HeaderText = "";
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 30;
+            // 
+            // Column2
+            // 
+            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column2.DataPropertyName = "name";
+            this.Column2.FillWeight = 200F;
+            this.Column2.HeaderText = "Nome";
+            this.Column2.Name = "Column2";
+            // 
+            // Column1
+            // 
+            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column1.DataPropertyName = "FullName";
+            this.Column1.FillWeight = 450F;
+            this.Column1.HeaderText = "Pasta";
+            this.Column1.Name = "Column1";
+            // 
+            // Encoding
+            // 
+            this.Encoding.DataPropertyName = "Encoding";
+            this.Encoding.HeaderText = "Encoding";
+            this.Encoding.Name = "Encoding";
+            // 
+            // Column3
+            // 
+            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column3.DataPropertyName = "Data";
+            this.Column3.HeaderText = "Modificado";
+            this.Column3.Name = "Column3";
+            // 
+            // Tamanho
+            // 
+            this.Tamanho.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Tamanho.DataPropertyName = "Tamanho";
+            this.Tamanho.HeaderText = "Tamanho";
+            this.Tamanho.Name = "Tamanho";
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -417,12 +417,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Encoding;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Tamanho;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.ComboBox ckbcaminho;
         private System.Windows.Forms.CheckBox ckcIgEncode;
@@ -440,5 +434,11 @@
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.FolderBrowserDialog SalvarComo;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Encoding;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Tamanho;
     }
 }
