@@ -6,9 +6,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("ProductionMaker")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Lista arquivos atualizados dentro de um diretório especifico")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Fiweb")]
 [assembly: AssemblyProduct("ProductionMaker")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]

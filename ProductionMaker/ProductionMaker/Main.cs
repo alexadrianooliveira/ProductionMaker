@@ -49,6 +49,11 @@ namespace ProductionMaker
         }
         #endregion
 
+        private void TrataDataInicial()
+        {
+            dateTimePicker1.Value = DateTime.Today.AddDays(-1);
+        }
+
 
         protected void CarregaCombo()
         {
@@ -61,7 +66,7 @@ namespace ProductionMaker
         private void Main_Load(object sender, EventArgs e)
         {
             dateTimePicker1.MaxDate = DateTime.Today;
-            dateTimePicker1.Value = DateTime.Today.AddDays(-20);
+            TrataDataInicial();
             CarregaCombo();
 
             ckBox = new CheckBox();
@@ -600,9 +605,9 @@ namespace ProductionMaker
             button5.Enabled = false;
             groupBox2.Enabled = false;
             groupBox4.Enabled = false;
-            groupBox1.Enabled = false;
-            dateTimePicker1.Value = DateTime.Today.AddDays(-20);
+            groupBox1.Enabled = false;            
             toolStripStatusLabel1.Text = "";
+            TrataDataInicial();
         }
 
         private void localizarDiretórioToolStripMenuItem_Click(object sender, EventArgs e)
