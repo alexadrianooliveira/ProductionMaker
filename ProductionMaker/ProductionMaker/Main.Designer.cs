@@ -80,7 +80,7 @@
             this.groupBox2.Size = new System.Drawing.Size(435, 172);
             this.groupBox2.TabIndex = 41;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Painel de monitoramento";
+            this.groupBox2.Text = "Painel";
             // 
             // listResultado
             // 
@@ -235,7 +235,7 @@
             this.groupBox3.Size = new System.Drawing.Size(530, 172);
             this.groupBox3.TabIndex = 38;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Arquivos";
+            this.groupBox3.Text = "Opções";
             // 
             // ckbcaminho
             // 
