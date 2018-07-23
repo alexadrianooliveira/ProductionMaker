@@ -31,9 +31,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Hopstarter-Sleek-Xp-Basic-Windows-Magnifier.ico</ApplicationIcon>
+    <ApplicationIcon>Resources\Hopstarter-Sleek-Xp-Basic-Windows-Magnifier.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\..\..\Componentes Windows Form\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -72,6 +75,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -87,8 +91,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Hopstarter-Mac-Folders-Windows.ico" />
-    <Content Include="Hopstarter-Sleek-Xp-Basic-Windows-Magnifier.ico" />
+    <Content Include="Resources\Hopstarter-Mac-Folders-Windows.ico" />
+    <Content Include="Resources\Hopstarter-Sleek-Xp-Basic-Windows-Magnifier.ico" />
+    <None Include="Resources\miniIcon.png" />
+    <Content Include="Resources\Rafiqul-Hassan-Blogger-Search.ico" />
+    <Content Include="Resources\search-8.png" />
+    <None Include="Resources\search-81.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

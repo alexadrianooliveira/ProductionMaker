@@ -44,22 +44,22 @@
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tamanho = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.ckbcaminho = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.ckcIgEncode = new System.Windows.Forms.CheckBox();
             this.txtEncode = new System.Windows.Forms.TextBox();
             this.ckbdirecaoextensao = new System.Windows.Forms.CheckBox();
             this.txtextensao = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.ckbcaminho = new System.Windows.Forms.ComboBox();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.SalvarComo = new System.Windows.Forms.FolderBrowserDialog();
+            this.button2 = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -75,9 +75,9 @@
             this.groupBox2.AutoSize = true;
             this.groupBox2.Controls.Add(this.listResultado);
             this.groupBox2.Enabled = false;
-            this.groupBox2.Location = new System.Drawing.Point(549, 25);
+            this.groupBox2.Location = new System.Drawing.Point(159, 23);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(435, 172);
+            this.groupBox2.Size = new System.Drawing.Size(791, 77);
             this.groupBox2.TabIndex = 41;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Painel";
@@ -88,7 +88,7 @@
             this.listResultado.FormattingEnabled = true;
             this.listResultado.Location = new System.Drawing.Point(3, 16);
             this.listResultado.Name = "listResultado";
-            this.listResultado.Size = new System.Drawing.Size(429, 153);
+            this.listResultado.Size = new System.Drawing.Size(785, 58);
             this.listResultado.TabIndex = 37;
             // 
             // groupBox4
@@ -98,9 +98,10 @@
             this.groupBox4.AutoSize = true;
             this.groupBox4.Controls.Add(this.ckbresultado);
             this.groupBox4.Controls.Add(this.checkBox2);
+            this.groupBox4.Controls.Add(this.groupBox2);
             this.groupBox4.Controls.Add(this.button3);
             this.groupBox4.Enabled = false;
-            this.groupBox4.Location = new System.Drawing.Point(16, 514);
+            this.groupBox4.Location = new System.Drawing.Point(16, 567);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(968, 119);
             this.groupBox4.TabIndex = 40;
@@ -147,9 +148,9 @@
             this.groupBox1.AutoSize = true;
             this.groupBox1.Controls.Add(this.dataGridView1);
             this.groupBox1.Enabled = false;
-            this.groupBox1.Location = new System.Drawing.Point(13, 203);
+            this.groupBox1.Location = new System.Drawing.Point(16, 204);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(974, 305);
+            this.groupBox1.Size = new System.Drawing.Size(974, 357);
             this.groupBox1.TabIndex = 39;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Arquivos";
@@ -169,7 +170,7 @@
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(3, 16);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(968, 286);
+            this.dataGridView1.Size = new System.Drawing.Size(968, 338);
             this.dataGridView1.TabIndex = 36;
             // 
             // Column4
@@ -217,56 +218,53 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.ckbcaminho);
+            this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Controls.Add(this.ckcIgEncode);
             this.groupBox3.Controls.Add(this.txtEncode);
             this.groupBox3.Controls.Add(this.ckbdirecaoextensao);
             this.groupBox3.Controls.Add(this.txtextensao);
             this.groupBox3.Controls.Add(this.label1);
-            this.groupBox3.Controls.Add(this.button5);
-            this.groupBox3.Controls.Add(this.button4);
-            this.groupBox3.Controls.Add(this.checkBox1);
-            this.groupBox3.Controls.Add(this.button1);
             this.groupBox3.Controls.Add(this.dateTimePicker1);
-            this.groupBox3.Controls.Add(this.label2);
-            this.groupBox3.Controls.Add(this.button2);
-            this.groupBox3.Location = new System.Drawing.Point(13, 25);
+            this.groupBox3.Location = new System.Drawing.Point(16, 57);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(530, 172);
+            this.groupBox3.Size = new System.Drawing.Size(968, 71);
             this.groupBox3.TabIndex = 38;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Opções";
             // 
-            // ckbcaminho
+            // label3
             // 
-            this.ckbcaminho.FormattingEnabled = true;
-            this.ckbcaminho.Location = new System.Drawing.Point(9, 40);
-            this.ckbcaminho.Name = "ckbcaminho";
-            this.ckbcaminho.Size = new System.Drawing.Size(424, 21);
-            this.ckbcaminho.TabIndex = 26;
-            this.ckbcaminho.SelectedIndexChanged += new System.EventHandler(this.ckbcaminho_SelectedIndexChanged);
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(8, 20);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(59, 13);
+            this.label3.TabIndex = 26;
+            this.label3.Text = "Data inicial";
             // 
             // ckcIgEncode
             // 
             this.ckcIgEncode.AutoSize = true;
-            this.ckcIgEncode.Location = new System.Drawing.Point(174, 115);
+            this.ckcIgEncode.Location = new System.Drawing.Point(636, 19);
             this.ckcIgEncode.Name = "ckcIgEncode";
-            this.ckcIgEncode.Size = new System.Drawing.Size(222, 17);
+            this.ckcIgEncode.Size = new System.Drawing.Size(186, 17);
             this.ckcIgEncode.TabIndex = 25;
-            this.ckcIgEncode.Text = "Ignorar Encoding (separe por virgula(\",\")):";
+            this.ckcIgEncode.Text = "Encoding (separe por virgula(\",\")):";
             this.ckcIgEncode.UseVisualStyleBackColor = true;
             // 
             // txtEncode
             // 
-            this.txtEncode.Location = new System.Drawing.Point(174, 134);
+            this.txtEncode.Location = new System.Drawing.Point(636, 38);
             this.txtEncode.Name = "txtEncode";
-            this.txtEncode.Size = new System.Drawing.Size(259, 20);
+            this.txtEncode.Size = new System.Drawing.Size(326, 20);
             this.txtEncode.TabIndex = 24;
             // 
             // ckbdirecaoextensao
             // 
             this.ckbdirecaoextensao.AutoSize = true;
-            this.ckbdirecaoextensao.Location = new System.Drawing.Point(9, 67);
+            this.ckbdirecaoextensao.Location = new System.Drawing.Point(312, 19);
             this.ckbdirecaoextensao.Name = "ckbdirecaoextensao";
             this.ckbdirecaoextensao.Size = new System.Drawing.Size(190, 17);
             this.ckbdirecaoextensao.TabIndex = 23;
@@ -275,9 +273,9 @@
             // 
             // txtextensao
             // 
-            this.txtextensao.Location = new System.Drawing.Point(9, 86);
+            this.txtextensao.Location = new System.Drawing.Point(312, 38);
             this.txtextensao.Name = "txtextensao";
-            this.txtextensao.Size = new System.Drawing.Size(424, 20);
+            this.txtextensao.Size = new System.Drawing.Size(302, 20);
             this.txtextensao.TabIndex = 22;
             this.txtextensao.Text = ".svn-base,.ini, .bak,.db,.config";
             // 
@@ -289,12 +287,33 @@
             this.label1.Size = new System.Drawing.Size(0, 13);
             this.label1.TabIndex = 21;
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.CustomFormat = "";
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(11, 38);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(280, 20);
+            this.dateTimePicker1.TabIndex = 7;
+            this.dateTimePicker1.Value = new System.DateTime(2013, 9, 23, 0, 0, 0, 0);
+            // 
+            // ckbcaminho
+            // 
+            this.ckbcaminho.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ckbcaminho.FormattingEnabled = true;
+            this.ckbcaminho.Location = new System.Drawing.Point(25, 24);
+            this.ckbcaminho.Name = "ckbcaminho";
+            this.ckbcaminho.Size = new System.Drawing.Size(927, 24);
+            this.ckbcaminho.TabIndex = 26;
+            this.ckbcaminho.SelectedIndexChanged += new System.EventHandler(this.ckbcaminho_SelectedIndexChanged);
+            // 
             // button5
             // 
             this.button5.Enabled = false;
-            this.button5.Location = new System.Drawing.Point(439, 132);
+            this.button5.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Location = new System.Drawing.Point(652, 142);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(83, 23);
+            this.button5.Size = new System.Drawing.Size(326, 42);
             this.button5.TabIndex = 20;
             this.button5.Text = "Limpar tudo";
             this.button5.UseVisualStyleBackColor = true;
@@ -303,70 +322,42 @@
             // button4
             // 
             this.button4.Enabled = false;
-            this.button4.Location = new System.Drawing.Point(439, 98);
+            this.button4.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.Maroon;
+            this.button4.Location = new System.Drawing.Point(328, 142);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(83, 23);
+            this.button4.Size = new System.Drawing.Size(302, 42);
             this.button4.TabIndex = 19;
             this.button4.Text = "Cancelar";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(9, 115);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(59, 17);
-            this.checkBox1.TabIndex = 9;
-            this.checkBox1.Text = "Ignorar";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.ckBox_CheckedChanged);
-            // 
             // button1
             // 
             this.button1.Enabled = false;
-            this.button1.Location = new System.Drawing.Point(439, 69);
+            this.button1.Font = new System.Drawing.Font("Corbel", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(27, 142);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(83, 23);
+            this.button1.Size = new System.Drawing.Size(280, 42);
             this.button1.TabIndex = 8;
             this.button1.Text = "Listar arquivos";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.CustomFormat = "";
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(9, 134);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(137, 20);
-            this.dateTimePicker1.TabIndex = 7;
-            this.dateTimePicker1.Value = new System.DateTime(2013, 9, 23, 0, 0, 0, 0);
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 25);
+            this.label2.Location = new System.Drawing.Point(22, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(56, 13);
             this.label2.TabIndex = 5;
             this.label2.Text = "Endereço:";
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(439, 41);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(83, 20);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Localizar";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // statusStrip1
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 636);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 689);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(1000, 22);
             this.statusStrip1.TabIndex = 42;
@@ -377,16 +368,33 @@
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(0, 17);
             // 
+            // button2
+            // 
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.ForeColor = System.Drawing.Color.Transparent;
+            this.button2.Image = global::ProductionMaker.Properties.Resources.miniIcon;
+            this.button2.Location = new System.Drawing.Point(958, 24);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(26, 26);
+            this.button2.TabIndex = 4;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1000, 658);
+            this.ClientSize = new System.Drawing.Size(1000, 711);
+            this.Controls.Add(this.ckbcaminho);
             this.Controls.Add(this.statusStrip1);
-            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.button2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -426,7 +434,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label2;
@@ -440,5 +447,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Encoding;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Tamanho;
+        private System.Windows.Forms.Label label3;
     }
 }

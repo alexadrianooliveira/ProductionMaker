@@ -169,8 +169,8 @@ namespace ProductionMaker
                 DirectoryInfo[] pastaBruta = diretorio.GetDirectories();
                 List<DirectoryInfo> pastas = pastaBruta.Where(item => (item.Exists) && DesconsiderarPasta(item.Name)).ToList();
 
-                if (checkBox1.Checked)
-                    dateTimePicker1.Value = Convert.ToDateTime("01/01/1900");
+                //if (checkBox1.Checked)
+                //    dateTimePicker1.Value = Convert.ToDateTime("01/01/1900");
 
                 foreach (DirectoryInfo d in pastas)
                 {
@@ -310,9 +310,9 @@ namespace ProductionMaker
 
         protected void Processa()
         {
+            string caminho = ckbcaminho.SelectedValue.ToString();
             try
-            {
-                string caminho = ckbcaminho.SelectedValue.ToString();
+            {                
                 listResultado.Items.Clear();
                 dataGridView1.DataSource = null;
                 dataGridView1.Rows.Clear();                
@@ -325,8 +325,8 @@ namespace ProductionMaker
                 List<Models.Arquivo> lista = new List<Models.Arquivo>();
                 DateTime vlPadrao = dateTimePicker1.Value;
 
-                if (checkBox1.Checked)
-                    dateTimePicker1.Value = Convert.ToDateTime("01/01/1900");
+                //if (checkBox1.Checked)
+                //    dateTimePicker1.Value = Convert.ToDateTime("01/01/1900");
 
                 ////Marca o diretório a ser listado
                 DirectoryInfo diretorio = new DirectoryInfo(@caminho);
@@ -437,6 +437,8 @@ namespace ProductionMaker
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                INI.ExcluirLinha(caminho);
+                CarregaCombo();
             }
         }
 
@@ -459,7 +461,7 @@ namespace ProductionMaker
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            dateTimePicker1.Enabled = !checkBox1.Checked;
+            //dateTimePicker1.Enabled = !checkBox1.Checked;
         }
 
         private void txtcaminho_KeyDown(object sender, KeyEventArgs e)

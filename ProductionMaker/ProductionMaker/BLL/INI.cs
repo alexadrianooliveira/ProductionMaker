@@ -57,6 +57,34 @@ namespace ProductionMaker
             }
         }
 
+        public static void ExcluirLinha(string texto)
+        {
+            StringBuilder sb = new StringBuilder();
+            string path = Directory.GetCurrentDirectory();
+            string fileName = path + "/config_maker.ini";
+            string[] lines = File.ReadAllLines(fileName);
+            int total = lines.Length;
+            int conta = 0;
+
+            foreach (string line in lines)
+            {
+                if (line != texto)
+                {
+                    conta++;
+
+                    if (conta < total)
+                        sb.Append(line + Environment.NewLine);
+                    else
+                        sb.Append(line);
+                }
+            }
+            using (StreamWriter sw = new StreamWriter(fileName))
+            {
+                sw.Write(sb.ToString());
+                sw.Close();
+            }
+        }
+
         public static List<Models.PathFile> GetArquivo()
         {
             string path = Directory.GetCurrentDirectory();
