@@ -80,6 +80,7 @@ namespace ProductionMaker
             return linhas;
         }
 
+        //Verifica se existe linha para o parametro
         private static bool TemLinha(string linha)
         {
             bool retorno = false;
