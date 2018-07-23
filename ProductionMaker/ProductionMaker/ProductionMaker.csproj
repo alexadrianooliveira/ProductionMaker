@@ -31,7 +31,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Hopstarter-Mac-Folders-Windows.ico</ApplicationIcon>
+    <ApplicationIcon>Hopstarter-Sleek-Xp-Basic-Windows-Magnifier.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -88,6 +88,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Hopstarter-Mac-Folders-Windows.ico" />
+    <Content Include="Hopstarter-Sleek-Xp-Basic-Windows-Magnifier.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
