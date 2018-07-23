@@ -131,7 +131,7 @@ namespace ProductionMaker
         private bool Desconsiderar(string extensao)
         {
             bool retorno = !ckbdirecaoextensao.Checked;
-            string[] itens = { ".svn-base", ".ini", ".bak", ".db" };
+            string[] itens = { ".svn-base", ".ini", ".bak", ".db",".gitignore" };
 
             if (txtextensao.Text != "")
                 itens = txtextensao.Text.Split(',');
@@ -139,6 +139,19 @@ namespace ProductionMaker
             for (int i = 0; i < itens.Length; i++)
             {
                 if (extensao.Trim().ToLower() == itens[i].ToString().Trim().ToLower())
+                    return !retorno;
+            }
+            return retorno;
+        }
+
+        private bool DesconsiderarPasta(string nomepasta)
+        {
+            bool retorno = true;
+            string[] itens = { ".git", ".vs", ".vsconde", "packages" };
+
+            for (int i = 0; i < itens.Length; i++)
+            {
+                if (nomepasta.Trim().ToLower() == itens[i].ToString().Trim().ToLower())
                     return !retorno;
             }
             return retorno;
@@ -154,7 +167,7 @@ namespace ProductionMaker
 
                 //Executa função GetFile(Lista os arquivos desejados de acordo com o parametro)
                 DirectoryInfo[] pastaBruta = diretorio.GetDirectories();
-                List<DirectoryInfo> pastas = pastaBruta.ToList();//.Where(item => item.Attributes == FileAttributes.Directory).ToList();
+                List<DirectoryInfo> pastas = pastaBruta.Where(item => (item.Exists) && DesconsiderarPasta(item.Name)).ToList();
 
                 if (checkBox1.Checked)
                     dateTimePicker1.Value = Convert.ToDateTime("01/01/1900");
